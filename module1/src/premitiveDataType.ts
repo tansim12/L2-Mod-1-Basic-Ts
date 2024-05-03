@@ -49,6 +49,25 @@ tupleData[0]= "ahmed"
 
 
 
+// object data ts  =====>>
+let user:{
+    firstName:"tansim";   
+    // first name is litarel type this value not change 
+    middleName?:string;
+    // middleName?  optional string | undefined
+    readonly lastName:string;
+    // readonly lastName  not to change user.lastName="hello"
+    age:number,
+} ={
+    firstName:"tansim",
+    middleName:"ahmed",
+    lastName:"tashdid",
+    age:12,
+    
+}
+
+// user.lastName="hello"
+
 
 
 
