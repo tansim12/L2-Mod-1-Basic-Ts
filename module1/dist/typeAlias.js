@@ -26,6 +26,7 @@
     function add2(num1, num2) {
         return num1 + num2;
     }
+    console.log(add(2, 2));
     // এইখান এ alias কাজ করে না কেন ?
     const add3 = function (num1, num2) {
         return num1 + num2;
