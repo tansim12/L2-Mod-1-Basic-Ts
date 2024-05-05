@@ -29,18 +29,18 @@
 
   // normal tuple
   const info: GenericTuple<string, number, string> = ["tnsim", 22, "pabna"];
+  interface UserInfo {
+    name: string;
+    home: string;
+    mob: string;
+  }
 
-  const user: GenericUser<
-    number,
-    {
-      name: string;
-      home: string;
-    }
-  > = [
+  const user: GenericUser <number,UserInfo> = [
     21,
     {
       name: "tansim",
       home: "pabna",
+      mob: "558524",
     },
   ];
 
