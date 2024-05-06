@@ -1,5 +1,5 @@
 {
-
+   // functional guard using here 
     //  guard  ===>  check করবে  যে এইটা কি না 
 
     interface NormalUser {
