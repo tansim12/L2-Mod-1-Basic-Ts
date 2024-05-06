@@ -59,14 +59,14 @@
     isGood: true,
     isBike: true, // isBike তো error deyar kotha ... but keno dilo na
   };
-  // const student1 = studentDetails<StudentInfo>(studentInfo1)  //isBike তো error deyar kotha ... এইখান এ দিচ্ছে না কেন
+  const student1 = studentDetails<StudentInfo>(studentInfo1)  //isBike তো error deyar kotha ... এইখান এ দিচ্ছে না  কারন  studentInfo1 ta কে typeScript parse korte partese na 
 
-  const student1 = studentDetails<StudentInfo>({
-    name: "tan",
-    roll: 25,
-    isGood: true,
-    isBike: true, // isBike তো error deyar kotha ... এখন দিচ্ছে
-  });
+  // const student1 = studentDetails<StudentInfo>({
+  //   name: "tan",
+  //   roll: 25,
+  //   isGood: true,
+  //   isBike: true, // isBike তো error deyar kotha ... এখন দিচ্ছে
+  // });
 
   //
 }

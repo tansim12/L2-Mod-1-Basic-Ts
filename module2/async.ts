@@ -27,7 +27,7 @@
     user: string;
     id: number;
     title: string;
-    // completed: string;  // why not getting error ,,,,  data যদি বড় হয় তাহলে কি করবে ?
+     completed: string;  // why not getting error ,,,,  data যদি বড় হয় তাহলে কি করবে ?
   }
 
   const fetchData = async (): Promise<Todo> => {
