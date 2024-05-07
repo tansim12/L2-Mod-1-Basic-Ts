@@ -7,7 +7,7 @@
     name: string;
     roll: number;
     isGood: boolean;
-    // id:number
+    id: number;
   }
 
   const studentDetails = <T extends { id: number; name: string }>(
@@ -20,16 +20,16 @@
     };
   };
   const studentInfo1 = {
-    id: 25,  // id dite ei  hobe .. must 
+    id: 25, // id dite ei  hobe .. must
     name: "tan",
     roll: 25,
     isGood: true,
-    isBike: true, 
+    isBike: true,
   };
 
-  // StudentInfo কেন দিলাম না 
+  // StudentInfo কেন দিলাম না
 
-  const result1 = studentDetails(studentInfo1);
+  const result1 = studentDetails<StudentInfo>(studentInfo1);
 
   //
 }
