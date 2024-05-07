@@ -45,5 +45,22 @@
   const resultFn1 = genericKeyOfFn<User, keyof User>(user, "age");
   const resultFn2 = genericKeyOfFn<User2, keyof User2>(user2, "roll");
 
+  type Person {
+    name:string,
+    age:number,
+    isGood:boolean
+  }
+  const person ={
+    name:"ts",
+    age:25,
+    isGood:true
+  }
+
+  const getObjKeyValue  = <O,K extends keyof O> (obj:O , Key:K)=>{
+    return obj[Key]
+  }
+
+  const personResult = getObjKeyValue<Person, keyof Person>(person,"age")
+
   //
 }

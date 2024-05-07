@@ -16,5 +16,36 @@
   type isHome = checked<"home">;
   type isCar = checked<"car">;
 
+
+
+  interface IHave2 {
+    phone: string;
+    computer: string;
+    home: string;
+  }
+
+type Checked2 <T> = T extends keyof IHave2  ? true: false 
+
+type isHome2 = Checked2<"home">
+
+
+
+
+
+interface person {
+  name: string,
+  age:number
+}
+
+type IsExist <T> = T extends keyof person ? true:false
+
+type checked3 = IsExist<"name">
+
+
+
+
+
+
+
   //
 }

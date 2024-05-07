@@ -37,8 +37,20 @@
     height: 25,
     width: "25",
     isTrue: false,
-    squire:266989
+    squire: 266989,
   };
+
+  type MyInfo = {
+    name: string;
+    age: number;
+    role: string;
+  };
+
+  type MyInfoChangeToString<T> = {
+    [key in keyof T]: T[key];
+  };
+
+  type Change = MyInfoChangeToString<MyInfo>;
 
   //
 }
